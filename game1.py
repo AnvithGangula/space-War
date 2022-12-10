@@ -132,14 +132,22 @@ while running:
             if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                 playerX_change = 0
 
-    if score_value>=5:
+    if score_value>=10:
         n=2
-        if score_value>=10:
-            n=2.5
-            if score_value>=20:
-                n=4
-                if score_value>=25:
-                    n=4.5
+        if score_value>=20:
+            n=2.3
+            if score_value>=30:
+                n=2.5
+                if score_value>=40:
+                    n=2.6
+                    if score_value>=50:
+                        n=2.8
+                        if score_value>=70:
+                            n=3
+                            if score_value>=85:
+                                n=3.3
+                                if score_value>=100:
+                                       n=4
 
     playerX += playerX_change
     if playerX <= 0:
